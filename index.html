@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Denardi - Desenvolvedor</title>
+  <meta name="description" content="Desenvolvedor">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <img src="" alt="Nome(Gabriel ou algum nome)" width="104" height="38">
+    <nav>
+      <ul class="header-menu">
+        <li><a href="#experiencia" id="box2">Experiência</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#contato" id="box">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="introducao">
+    <img src="img/foto2.jpg" alt="foto_perfil" width="360" height="520">
+    <div>
+      <h1>Desenvolvedor<br>Front End &<br>Back End</h1>
+      <p>Localizado em São Paulo 👩‍💻</p>
+    </div>
+  </main>
+
+  <section class="experiencia" id="experiencia" aria-label="Experiência">
+    <h2 class="subtitulo">Experiência</h2>
+    <div>
+      <p class="experiencia-texto">Começando agora no mercado de programação Front-End, com um conhecimento básico em
+        Back-End, atualmente estou fazendo o Técnico em Informatica, procuro sempre como melhorar a experiencia do
+        usuario. Gosto de trazer clareza para problemas complexos.</p>
+
+
+
+      <div class="empresa">
+        <span class="empresa-ano">2022-08</span>
+        <h3 class="empresa-titulo">Colégio Politec</h3>
+        <span class="empresa-titulo">Estagiário</span>
+        <p class="empresa-texto"></p>
+        <ul class="empresa-habilidades">
+          <li>Suporte Técnico</li>
+          <li>Planejamento de Aulas</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="formacao" id="formacao" aria-label="Formação">
+    <div class="formacao-container">
+      <h2 class="subtitulo">Formação</h2>
+
+      <div>
+        <p class="formacao-texto">
+          Minha mais recente experiência acadêmica que está em andamento é o <strong>Técnico em Informatica + Ensino
+            Médio</strong> 🎓. Além disso me mantenho sempre atualizado com cursos intensivos online.
+        </p>
+
+        <ul class="faculdade-lista">
+          <li class="faculdade">
+            <span class="faculdade-tipo">Tecnologia</span>
+            <h3 class="faculdade-curso">Técnico em Informática</h3>
+            <span class="faculdade-instituicao">Colegio Politec </span>
+          </li>
+
+        </ul>
+
+        <div class="formacao-extra">
+          <div class="cursos">
+            <h3>Cursos Intensivos</h3>
+            <ul>
+              <li>Desenvolvimento <span>56h</span></li>
+              <li>Introduction to Front-End Development <span>15h</span></li>
+            </ul>
+          </div>
+          <div class="idiomas">
+            <h3>Idiomas</h3>
+            <ul>
+              <li>Inglês <span>/ Intermediário</span></li>
+              <li>Português <span>/ Fluente</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer" id="contato">
+    <div class="footer-container">
+      <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma
+        conversa 👋</p>
+      <ul class="footer-contato">
+        <li>gab.denardi06@gmail.com</li>
+        <li>+55 19 989715342</li>
+        <li><a href="https://www.instagram.com/gabriel_denardi_/">@instagram</a> <a
+            href="https://www.behance.net/gabrieldenardi">@behance</a></li>
+        <li><a href="https://www.linkedin.com/in/gabriel-denardi-0242b6230/">@linkedIn</a></li>
+      </ul>
+      <p class="footer-copy">Gabriel Denardi. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault(); // Impede o comportamento padrão do link
+
+        const targetId = link.getAttribute('href').substring(1); // Remove o "#" do href
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    const element = document.getElementById("box");
+    element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+
+  </script>
+
+</body>
+
+</html>
