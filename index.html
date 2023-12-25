@@ -34,16 +34,16 @@
     <img src="img/foto2.jpg" alt="foto_perfil" width="360" height="520">
     <div>
       <h1>Desenvolvedor<br>Front End &<br>Back End</h1>
-      <p>Localizado em São Paulo 👩‍💻</p>
+      <p>Localizado em Americana - SP 👩‍💻</p>
     </div>
   </main>
 
   <section class="experiencia" id="experiencia" aria-label="Experiência">
     <h2 class="subtitulo">Experiência</h2>
     <div>
-      <p class="experiencia-texto">Começando agora no mercado de programação Front-End, com um conhecimento básico em
-        Back-End, atualmente estou fazendo o Técnico em Informatica, procuro sempre como melhorar a experiencia do
-        usuario. Gosto de trazer clareza para problemas complexos.</p>
+      <p class="experiencia-texto">Iniciando agora no mercado de programação Front-End, com conhecimentos básico em Back-End, 
+        atualmente estou cursando o Técnico em Informática, estou sempre em busca de formas para melhorar a experiência do usuário. 
+        Gosto de trazer clareza a problemas complexos.</p>
 
 
 
@@ -55,6 +55,7 @@
         <ul class="empresa-habilidades">
           <li>Suporte Técnico</li>
           <li>Planejamento de Aulas</li>
+          <li>Montagem de Computadores</li>
         </ul>
       </div>
 
@@ -75,7 +76,15 @@
           <li class="faculdade">
             <span class="faculdade-tipo">Tecnologia</span>
             <h3 class="faculdade-curso">Técnico em Informática</h3>
-            <span class="faculdade-instituicao">Colegio Politec </span>
+            <span style="color: white; font-weight: bold;" class="faculdade-tipo"> Tecnologias Usadas</span> 
+            <span class="faculdade-instituicao"> Desenvolvimento Web</span> <br>
+            <span class="faculdade-instituicao"> Banco de Dados</span> <br>
+            <span  class="faculdade-instituicao"> Corel Draw</span> <br>
+            <span class="faculdade-instituicao"> Photoshop</span> <br>
+            <span class="faculdade-instituicao"> Autocad</span> <br>
+            <span class="faculdade-instituicao"> SketchUp</span> <br>
+            <span class="faculdade-instituicao"> PHP/JS/HTML/CSS/SQL</span> <br><br>
+            <span style="color: white;" class="faculdade-instituicao">Colegio Politec </span>
           </li>
 
         </ul>
@@ -84,8 +93,10 @@
           <div class="cursos">
             <h3>Cursos Intensivos</h3>
             <ul>
-              <li>Desenvolvimento <span>56h</span></li>
-              <li>Introduction to Front-End Development <span>15h</span></li>
+              <li>Crash Course on Python - Google</li>
+              <li>Introduction to Front-End Development - Meta </li>
+              <li>Introdução à Ciência da Computação com Python - USP</li>
+              <li>Google Cloud Fundamentals: Core Infrastructure - Google Cloud</li>
             </ul>
           </div>
           <div class="idiomas">
@@ -107,7 +118,7 @@
         conversa 👋</p>
       <ul class="footer-contato">
         <li>gab.denardi06@gmail.com</li>
-        <li>+55 19 989715342</li>
+        <li> <a href="https://api.whatsapp.com/send?phone=5519989715342&text=Ol%C3%A1%20queria%20entrar%20em%20contato%20com%20voc%C3%AA.">+55 19 989715342</a></li>
         <li><a href="https://www.instagram.com/gabriel_denardi_/">@instagram</a> <a
             href="https://www.behance.net/gabrieldenardi">@behance</a></li>
         <li><a href="https://www.linkedin.com/in/gabriel-denardi-0242b6230/">@linkedIn</a></li>
@@ -120,9 +131,9 @@
 
     document.querySelectorAll('nav ul li a').forEach(link => {
       link.addEventListener('click', e => {
-        e.preventDefault(); // Impede o comportamento padrão do link
+        e.preventDefault(); 
 
-        const targetId = link.getAttribute('href').substring(1); // Remove o "#" do href
+        const targetId = link.getAttribute('href').substring(1); 
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
